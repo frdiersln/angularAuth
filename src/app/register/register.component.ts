@@ -13,7 +13,7 @@ export class RegisterComponent {
 
   constructor(private builder:FormBuilder, private toastr:ToastrService,
               private service:AuthService, private router:Router){
-
+                sessionStorage.clear();
   }
 
   registerForm = this.builder.group({
