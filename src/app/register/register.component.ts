@@ -32,7 +32,7 @@ export class RegisterComponent {
         this.router.navigate(['login']);
       });
     }else{
-      this.toastr.warning('Lütfen girdiğiniz bilgileri kontrol ediniz!')
+      this.toastr.warning('Formu doğru doldurduğunuzdan emin olunuz!')
     }
   }
 }

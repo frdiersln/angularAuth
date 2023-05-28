@@ -16,6 +16,7 @@ import { UpdatepopupComponent } from './updatepopup/updatepopup.component';
 import { ToastrModule } from 'ngx-toastr';
 import { HttpClientModule } from '@angular/common/http';
 import { MatFormFieldModule } from '@angular/material/form-field';
+import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { MatFormFieldModule } from '@angular/material/form-field';
     RegisterComponent,
     LoginComponent,
     HomeComponent,
-    UpdatepopupComponent
+    UpdatepopupComponent,
+    PagenotfoundComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,1 +1,20 @@
-<p>login works!</p>
+<mat-card>
+    <mat-card-header>
+        Giriş Yap
+    </mat-card-header>
+    <mat-card-content>
+        <form [formGroup]="loginForm" (ngSubmit)="proceedLogin()">
+    
+            <mat-form-field>
+                <mat-label> Kullanıcı Adı </mat-label>
+                <input matInput formControlName="username">
+            </mat-form-field>
+            <mat-form-field>
+                <mat-label> Şifre </mat-label>
+                <input matInput formControlName="password">
+            </mat-form-field>
+    
+            <button mat-raised-button color="primary">Giriş Yap</button>
+        </form>
+    </mat-card-content>
+    </mat-card>

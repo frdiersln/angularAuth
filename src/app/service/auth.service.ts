@@ -25,4 +25,12 @@ export class AuthService {
     return this.http.put(this.apiUrl+'/'+code, inputData);
   }
 
+  static isLoggedIn(){
+    return sessionStorage.getItem('username')!=null;
+  }
+
+  getUserRole(){
+    return sessionStorage.getItem('role')!=null?sessionStorage.getItem('role')?.toString():'';
+  }
+
 }

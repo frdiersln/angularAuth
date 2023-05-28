@@ -5,6 +5,14 @@
       "name": "Ferdi Eraslan",
       "password": "Ax2bxc41*Ax2bxc41*",
       "email": "frdiersln@hotmail.com",
+      "role": "admin",
+      "isActive": "active"
+    },
+    {
+      "id": "user0",
+      "name": "user user",
+      "password": "userPassword*",
+      "email": "user@gmail.com",
       "role": "user",
       "isActive": "active"
     }
