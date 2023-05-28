@@ -8,9 +8,11 @@
 </head>
 <body>
   <router-outlet>
-    <a [routerLink]="['']"> Home </a>
-    <a [routerLink]="['/login']"> Login </a>
-    <a [routerLink]="['/register']"> Register </a>
-  </router-outlet>
+    <div class="navigate" *ngIf="isMenuRequired">
+      <a [routerLink]="['']"> Home </a>
+      <a [routerLink]="['/login']"> Login </a>
+      <a [routerLink]="['/register']"> Register </a>
+    </div>
+    </router-outlet>
 </body>
 </html>
