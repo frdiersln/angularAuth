@@ -12,7 +12,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RegisterComponent } from './register/register.component';
 import { LoginComponent } from './login/login.component';
 import { HomeComponent } from './home/home.component';
-import { UpdatepopupComponent } from './updatepopup/updatepopup.component';
 import { ToastrModule } from 'ngx-toastr';
 import { HttpClientModule } from '@angular/common/http';
 import { MatFormFieldModule } from '@angular/material/form-field';
@@ -24,7 +23,6 @@ import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
     RegisterComponent,
     LoginComponent,
     HomeComponent,
-    UpdatepopupComponent,
     PagenotfoundComponent,
   ],
   imports: [
