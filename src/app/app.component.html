@@ -1,17 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  <router-outlet>
-    <div class="navigate" *ngIf="isMenuRequired">
-      <a [routerLink]="['']"> Home </a>
-      <a [routerLink]="['/login']"> Logout </a>
-    </div>
-    </router-outlet>
-</body>
-</html>
+<mat-toolbar *ngIf="isMenuRequired">
+    <a [routerLink]="['']"> Logo </a>
+    <span class="spacer"></span>
+    <a [routerLink]="['']"> Home </a>
+    <a [routerLink]="['/login']"> Logout </a>
+</mat-toolbar>
+
+  <router-outlet></router-outlet>
