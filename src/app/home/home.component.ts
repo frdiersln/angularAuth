@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent {
-  name = localStorage.getItem('name');
+userName: any;
+role: any;
+  constructor(){
+    this.userName = sessionStorage.getItem('username');
+    this.role = sessionStorage.getItem('role');
+  }
 }
